@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Basic Calculator</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body background= "pic01.png">
+		<h1 id="design">Basic Calculator</h1>
+		<hr/>
+		<div id="calculator">
+			<form name="cal" autocomplete="off">
+				<input type="text" id="display" name="ans" disabled/><br/>
+				
+				<input type="button" value="C" id="cancel" onclick="cal.ans.value=''">
+				<input type="button" value="<-" id="keys" onclick="backspace()">
+				<input type="button" value="x^2" id="keys" onclick="power(2)">
+				<input type="button" value="+" id="keys" onclick="cal.ans.value+='+'"><br/>
+				
+				
+				<input type="button" value="9" id="keys" onclick="cal.ans.value+='9'">
+				<input type="button" value="8" id="keys" onclick="cal.ans.value+='8'">
+				<input type="button" value="7" id="keys" onclick="cal.ans.value+='7'">
+				<input type="button" value="-" id="keys" onclick="cal.ans.value+='-'"><br/>
+				
+				
+				<input type="button" value="6" id="keys" onclick="cal.ans.value+='6'">
+				<input type="button" value="5" id="keys" onclick="cal.ans.value+='5'">
+				<input type="button" value="4" id="keys" onclick="cal.ans.value+='4'">
+				<input type="button" value="*" id="keys" onclick="cal.ans.value+='*'"><br/>
+				
+				
+				<input type="button" value="3" id="keys" onclick="cal.ans.value+='3'">
+				<input type="button" value="2" id="keys" onclick="cal.ans.value+='2'">
+				<input type="button" value="1" id="keys" onclick="cal.ans.value+='1'">
+				<input type="button" value="/" id="keys" onclick="cal.ans.value+='/'"><br/>
+				
+				
+				<input type="button" value="0" id="keys" onclick="cal.ans.value+='0'">
+				<input type="button" value="." id="keys" onclick="cal.ans.value+='.'">
+				<input type="button" value="=" id="equal" onclick="result()">
+				<input type="button" value="&radic;" id="keys" onclick="power(0.5)">
+			</form>
+		</div>
+		<script src="myJavascript.js"></script>
+	</body>
+</html>
